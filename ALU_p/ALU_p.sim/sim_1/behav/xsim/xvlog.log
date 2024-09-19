@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/federico/Universidad/5to/Arquitectura/TP1/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/federico/Universidad/5to/Arquitectura/TP1/control_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/federico/Universidad/5to/Arquitectura/TP1/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TopModule
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/federico/Universidad/5to/Arquitectura/TP1/tb_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top_alu
