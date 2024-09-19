@@ -1,4 +1,6 @@
 set_property SRC_FILE_INFO {cfile:/home/federico/Universidad/5to/Arquitectura/TP1/const.xdc rfile:../../../../const.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN W5 [get_ports i_clk]
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN V17 [get_ports {i_data_bus[0]}] ; # SW0
 set_property src_info {type:XDC file:1 line:10 export:INPUT save:INPUT read:READ} [current_design]
@@ -17,8 +19,6 @@ set_property src_info {type:XDC file:1 line:28 export:INPUT save:INPUT read:READ
 set_property PACKAGE_PIN W13 [get_ports {i_data_bus[7]}] ; # SW7
 set_property src_info {type:XDC file:1 line:35 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN W19 [get_ports {i_refresh}] ; # BTNL (Left Button)
-set_property src_info {type:XDC file:1 line:37 export:INPUT save:INPUT read:READ} [current_design]
-set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets i_refresh_IBUF]
 set_property src_info {type:XDC file:1 line:40 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN U16 [get_ports {o_result[0]}] ; # LD0
 set_property src_info {type:XDC file:1 line:43 export:INPUT save:INPUT read:READ} [current_design]
@@ -41,5 +41,3 @@ set_property src_info {type:XDC file:1 line:68 export:INPUT save:INPUT read:READ
 set_property PACKAGE_PIN T17 [get_ports {i_load_B}] ; # Load B
 set_property src_info {type:XDC file:1 line:71 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN T18 [get_ports {i_load_op}] ; # Load op
-set_property src_info {type:XDC file:1 line:73 export:INPUT save:INPUT read:READ} [current_design]
-set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets i_load_op_IBUF]

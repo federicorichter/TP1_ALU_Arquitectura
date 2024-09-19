@@ -1,7 +1,7 @@
 ## Clock signal
-#set_property PACKAGE_PIN W5 [get_ports i_clk]
-#set_property IOSTANDARD LVCMOS33 [get_ports i_clk]
-#create_clock -add -name sys_clk_pin -period 10.00 [get_ports i_clk]
+set_property PACKAGE_PIN W5 [get_ports i_clk]
+set_property IOSTANDARD LVCMOS33 [get_ports i_clk]
+create_clock -add -name sys_clk_pin -period 10.00 [get_ports i_clk]
 
 ## Asignar los switches a i_data_bus[9:0]
 set_property PACKAGE_PIN V17 [get_ports {i_data_bus[0]}] ; # SW0
@@ -34,7 +34,7 @@ set_property IOSTANDARD LVCMOS33 [get_ports {i_data_bus[7]}]
 
 set_property PACKAGE_PIN W19 [get_ports {i_refresh}] ; # BTNL (Left Button)
 set_property IOSTANDARD LVCMOS33 [get_ports {i_refresh}]
-set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets i_refresh_IBUF]
+#set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets i_refresh_IBUF]
 
 ## Asignar o_result[7:0] a los LEDs LD0-LD7
 set_property PACKAGE_PIN U16 [get_ports {o_result[0]}] ; # LD0
@@ -70,4 +70,4 @@ set_property IOSTANDARD LVCMOS33 [get_ports {i_load_B}]
 
 set_property PACKAGE_PIN T18 [get_ports {i_load_op}] ; # Load op
 set_property IOSTANDARD LVCMOS33 [get_ports {i_load_op}]
-set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets i_load_op_IBUF]
+#set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets i_load_op_IBUF]
