@@ -8,12 +8,10 @@ module TopModule #(
     input wire i_load_B,
     input wire i_load_op,
     input wire i_clk,
-    //output wire signed [DATA_WIDTH-1:0] o_A,
-    //output wire signed [DATA_WIDTH-1:0] o_B,
     output wire signed [DATA_WIDTH-1:0] o_result
 );
 
-    //wire signed [DATA_WIDTH-1:0] A_wire, B_wire;
+    wire signed [DATA_WIDTH-1:0] A_wire, B_wire;
     wire [MODE_WIDTH-1:0] mode_wire;
     wire signed [DATA_WIDTH-1:0] output_alu;
     reg signed [DATA_WIDTH-1:0] output_res;
@@ -42,16 +40,13 @@ module TopModule #(
         .o_result(output_alu)
     );
 
-    always @(posedge i_clk) begin
+    always @(posedge i_clk ) begin
         if(i_refresh) begin
             output_res <= output_alu;  // Asignar el resultado si i_refresh está en alto
         end
         
     end
 
-
-    //assign o_A = A_wire;
-    //assign o_B = B_wire;
     assign o_result = output_res;
 
 endmodule

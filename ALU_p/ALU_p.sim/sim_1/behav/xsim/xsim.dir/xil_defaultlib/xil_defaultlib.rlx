@@ -1,9 +1,0 @@
-0.7
-2020.2
-May  7 2023
-15:10:42
-/home/federico/Universidad/5to/Arquitectura/TP1/ALU_p/ALU_p.sim/sim_1/behav/xsim/glbl.v,1683266558,verilog,,,,glbl,,,,,,,,
-/home/federico/Universidad/5to/Arquitectura/TP1/alu.v,1726499109,verilog,,/home/federico/Universidad/5to/Arquitectura/TP1/control_unit.v,,ALU,,,,,,,,
-/home/federico/Universidad/5to/Arquitectura/TP1/control_unit.v,1726499135,verilog,,/home/federico/Universidad/5to/Arquitectura/TP1/top.v,,ControlUnit,,,,,,,,
-/home/federico/Universidad/5to/Arquitectura/TP1/tb_top.v,1726499540,verilog,,,,tb_top_alu,,,,,,,,
-/home/federico/Universidad/5to/Arquitectura/TP1/top.v,1726499182,verilog,,/home/federico/Universidad/5to/Arquitectura/TP1/tb_top.v,,TopModule,,,,,,,,

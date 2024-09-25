@@ -28,11 +28,7 @@ set_property IOSTANDARD LVCMOS33 [get_ports {i_data_bus[6]}]
 set_property PACKAGE_PIN W13 [get_ports {i_data_bus[7]}] ; # SW7
 set_property IOSTANDARD LVCMOS33 [get_ports {i_data_bus[7]}]
 
-## Asignar los botones a i_rst e i_refresh
-#set_property PACKAGE_PIN T17 [get_ports {i_rst}] ; # BTNC (Central Button)
-#set_property IOSTANDARD LVCMOS33 [get_ports {i_rst}]
-
-set_property PACKAGE_PIN W19 [get_ports {i_refresh}] ; # BTNL (Left Button)
+set_property PACKAGE_PIN T18 [get_ports {i_refresh}] ; # BTNL (Left Button)
 set_property IOSTANDARD LVCMOS33 [get_ports {i_refresh}]
 #set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets i_refresh_IBUF]
 
@@ -62,12 +58,11 @@ set_property PACKAGE_PIN V14 [get_ports {o_result[7]}] ; # LD7
 set_property IOSTANDARD LVCMOS33 [get_ports {o_result[7]}]
 
 #Load
-set_property PACKAGE_PIN U18 [get_ports {i_load_A}] ; # Load A
+set_property PACKAGE_PIN W19 [get_ports {i_load_A}] ; # Load A
 set_property IOSTANDARD LVCMOS33 [get_ports {i_load_A}]
 
-set_property PACKAGE_PIN T17 [get_ports {i_load_B}] ; # Load B
+set_property PACKAGE_PIN U18 [get_ports {i_load_B}] ; # Load B
 set_property IOSTANDARD LVCMOS33 [get_ports {i_load_B}]
 
-set_property PACKAGE_PIN T18 [get_ports {i_load_op}] ; # Load op
+set_property PACKAGE_PIN T17 [get_ports {i_load_op}] ; # Load op
 set_property IOSTANDARD LVCMOS33 [get_ports {i_load_op}]
-#set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets i_load_op_IBUF]
